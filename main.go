@@ -42,7 +42,7 @@ func main() {
 	envUpstreamAddr := os.Getenv("UPSTREAM_ADDR")
 	envLocalPort := os.Getenv("PORT")
 
-	if *localPort == "" {
+	if  envLocalPort != "" {
 		localPort = &envLocalPort
 	}
 
