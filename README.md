@@ -23,6 +23,19 @@ Of these eight endpoints, a random number between one and four of them are set t
 
 Dockerhub builds are available at https://hub.docker.com/r/tulpenhaendler/broken-proxy
 
+## docker-compose
+
+```
+services:
+  proxy:
+    image: tulpenhaendler/broken-proxy:latest
+    environment:
+      - PORT=8080
+      - UPSTREAM_ADDR=https://<real node here>
+    ports:
+      - 8080:8080
+```
+
 
 ## Usage
 
