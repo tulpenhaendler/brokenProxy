@@ -19,6 +19,10 @@ The brokenProxy application exposes eight endpoints, each of which is a simulate
 
 Of these eight endpoints, a random number between one and four of them are set to be down at any given time. Which endpoints are down changes randomly every minute.
 
+# Dockerhub
+
+Dockerhub builds are available at https://hub.docker.com/r/tulpenhaendler/broken-proxy
+
 
 ## Usage
 
