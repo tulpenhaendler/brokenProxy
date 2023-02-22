@@ -50,8 +50,6 @@ You can also set the upstream server address and the local server port via the f
 
 For example:
 
-shell
-
 ```
 $ export UPSTREAM_ADDR=http://localhost:8000
 $ export PORT=8080

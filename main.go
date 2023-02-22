@@ -131,7 +131,7 @@ func setDown() {
 			downMap[keys[i]] = false
 		}
 		downMapLock.Unlock()
-		time.Sleep(1 * time.Second)
+		time.Sleep(1 * time.Minute)
 	}
 }
 
