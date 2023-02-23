@@ -60,7 +60,7 @@ func main() {
 			"info": "brokenProxy",
 		})
 	})
-	r.GET("/:host/*path", func(ctx *gin.Context) {
+	r.Any("/:host/*path", func(ctx *gin.Context) {
 		h := ctx.Param("host")
 		url := ctx.Param("path")
 		if _, ok := downMap[h]; !ok {
